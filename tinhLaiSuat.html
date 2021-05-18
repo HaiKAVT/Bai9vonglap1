@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi suất kép </title>
+</head>
+<body>
+<script>
+
+  let m = parseFloat(prompt("Enter money start give bank : "));
+  let n = parseInt(prompt("Enter time (month) you want get money : "));
+  let l = parseFloat(prompt("Enter the interest rate : "));
+  for(i=1; i<= n; i++){
+    m = m + m*l/100;
+  }
+  document.write('Your money after is : ' + m);
+</script>
+</body>
+</html>

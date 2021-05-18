@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiện 20 số đầu trong dãy fibonacci </title>
+</head>
+<body>
+<script>
+    let number = 20;
+    let n1 = 0 , n2 = 1;
+     console.log(n1);
+     console.log(n2);
+    let n = n1+n2;
+
+
+    for(i = 1 ; i < number - 1  ; i ++){
+        n = n1 + n2 ;
+        n1 = n2 ;
+        n2 = n;
+
+        console.log(n);
+    }
+    document.write(n);
+</script>
+
+</body>
+</html>

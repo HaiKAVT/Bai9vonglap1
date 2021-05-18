@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố </title>
+</head>
+<body>
+<script>
+    let num = +prompt('enter the number flag input: ');
+    let n = 2;
+    let count = 0;
+    while (count < num) {
+        if (soNguyenTo(n) == 1) {
+            console.log(n + " ");
+            count++
+        }
+        n++;
+    }
+
+
+    function soNguyenTo(number) {
+        debugger
+        let soNguyenTo = 1;
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0 && number > 2) {
+                soNguyenTo = 0;
+            }
+        }
+        return soNguyenTo;
+    }
+</script>
+</body>
+</html>

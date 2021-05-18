@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2 </title>
+</head>
+<body>
+<script>
+    let nhietDo = +prompt('nhập vào nhiệt độ hiện tại : ');
+    while (nhietDo <20 || nhietDo >100){
+        if(nhietDo<20){
+
+            nhietDo = +prompt('mời nhập lại nhiệt độ trên 20 :  ');
+        }
+        if(nhietDo > 100){
+            nhietDo = +prompt('mời nhập lại nhiệt độ dưới 100 : ');
+        }
+    } alert( 'nhiệt độ hiện tại là : ' +  nhietDo);
+
+
+
+</script>
+</body>
+</html>
